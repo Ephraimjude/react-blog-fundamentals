@@ -3,7 +3,7 @@
 const BlogList = ({blogs, title}) => {
 
     return (
-        <div className="blog-list">
+        <div key = {blogs} className="blog-list">
             <h1>{title}</h1>
                 {/* map through blogs array and display each blog */}
                 {blogs.map((blog) =>(

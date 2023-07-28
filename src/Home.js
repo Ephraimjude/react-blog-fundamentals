@@ -1,14 +1,12 @@
-import { useState, useEffect } from 'react';
-import BlogList from './BlogList';
+import BlogList from './blogList';
 import useFetch from './useFetch';
-
 
 
 const Home = () => {
     const { data:blogs, isPending, error} = useFetch('http://localhost:8080/blogs');
     
     return ( 
-        <div className="home">
+        <div key = {blogs} className="home">
             { error && <div>{ error }</div>}
             { isPending && <div>Loading...</div>}
             { blogs && <BlogList blogs={blogs}/>}
