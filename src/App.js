@@ -3,6 +3,7 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './create';
 import BlogDetails from './blogDetails';
+import Footer from './footer';
 import NotFound from './notFound';
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
             </Route>
           </Switch>
         </div>
+        {/* Footer */}
+        <Footer />
       </div>
     </Router>
   );

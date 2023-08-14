@@ -7,13 +7,26 @@
   color: #333;
 }
 
+.intro{
+  font-size: 20px;
+  text-align: center ;
+  padding : 10px;
+  font-weight: 900;
+  color: #f1356d;
+  margin: auto;
+}
+
 .navbar{
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.04);
+  backdrop-filter: blur(9px);
   border-bottom: 1px solid #f2f2f2;
+  position: sticky;
+  top: 0;
 }
 
 .navbar h1{
@@ -34,10 +47,29 @@
   color: #f1356d;
 }
 
+.navbar .menu{
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 1.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.navbar .menu span{
+  height: 0.25rem;
+  width: 100%;
+  background-color: #f1356d;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
 .content{
   max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 /* blog previews / list */
@@ -59,6 +91,31 @@
 
 .blog-preview a{
   text-decoration: none;
+}
+
+.no_blog{
+  text-align: center;
+  font-size: 16px;
+}
+
+.no_blog p{
+  margin: 10px auto;
+  padding: 5px;
+  font-style: italic;
+}
+
+.no_blog a{
+  text-decoration: none;
+  color: #ddd;
+}
+
+.no_blog button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* blog details page */
@@ -104,8 +161,14 @@
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
+  border-radius: 8px;
   box-sizing: border-box;
   display: block;
+}
+
+.create textarea{
+  max-height: 400px;
+  height: 300px;
 }
 
 .create button{
@@ -116,6 +179,8 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/*not-found section of the page*/
 
 .not-found{
   text-align: center;
@@ -132,4 +197,45 @@
 
 .not-found a{
   font-weight: bold;
+}
+
+/*footer*/
+
+footer{
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*media query*/
+
+@media (max-width: 480px) {
+  .navbar{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar h1{
+    font-size: 20px;
+  }
+
+  .navbar .menu{
+    display: flex;
+  }
+
+  .navbar .links{
+    display:flex;
+    flex-direction: column;
+    font-size:16px;
+    font-weight: bolder;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    margin: 6px 8px;
+    }
+
+  .navbar .links:not(.open){
+    display: none;
+  }
 }

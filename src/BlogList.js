@@ -5,7 +5,7 @@ const BlogList = ({ blogs, title }) => {
         <div className="blog-list" >
             <h2>{ title }</h2>
                 { /* map through blogs array and display each blog */ }
-                { blogs.map((blog) => (
+                {blogs.map((blog) => (
                     // pass in props for title/body
                     <div className="blog-preview" key={blog.id}>
                         <Link to={`/blogs/${blog.id}`} >
