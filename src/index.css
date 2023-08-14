@@ -96,6 +96,7 @@
 .no_blog{
   text-align: center;
   font-size: 16px;
+  margin-bottom: 60px;
 }
 
 .no_blog p{
@@ -202,9 +203,13 @@
 /*footer*/
 
 footer{
-  margin-top: auto;
+  position: static;
+  bottom: 0;
+  color: #d6d4d4;
+  top: auto;
+  margin: auto;
   text-align: center;
-  padding: 10px 0;
+  padding: auto;
 }
 
 /*media query*/
