@@ -1,6 +1,6 @@
 import BlogList from './blogList';
 import useFetch from './useFetch';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
