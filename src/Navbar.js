@@ -7,7 +7,7 @@ const Navbar = () => {
     return ( 
         <nav className="navbar">
             <div className="logo">
-            <Link to = "/"><h1>LOC Blog</h1></Link>
+            <Link to = "/"><h1>LocoBlog</h1></Link>
             </div>        
             <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen)

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 /* Base styles */
 *{
@@ -27,6 +28,7 @@
 }
 
 .navbar h1{
+  font-family: 'Pacifico';
   color: #333;
 }
 
